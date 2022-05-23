@@ -64,7 +64,6 @@ const googleSignIn = async(req, res = response) => {
         
 
         let usuario = await Usuario.findOne({email});
-        console.log(usuario);
             if (!usuario) {
                 // Tengo que crearlo
                 const data = {
